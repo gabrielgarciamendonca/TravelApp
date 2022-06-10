@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">App de viagens</string>
+    <string name="app_name">App de Viagens</string>
+    <string name="title_1">vamos aproveitar o</string>
+    <string name="title_2">belo mundo</string>
+    <string name="sign_in">Entrar</string>
+    <string name="create_account">Criar Conta</string>
+    <string name="skip">Pular</string>
 </resources>

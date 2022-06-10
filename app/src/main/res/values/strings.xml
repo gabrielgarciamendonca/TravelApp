@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Travel App</string>
+    <string name="title_1">Let’s enjoy the</string>
+    <string name="title_2">Beautiful World</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create an account</string>
+    <string name="skip">Skip</string>
 </resources>

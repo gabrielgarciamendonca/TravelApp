@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_default"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEF6DA">
+
+        <ImageView
+            android:id="@+id/cardOptionIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
+            android:contentDescription="@string/option_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_tickets" />
+
+        <TextView
+            android:id="@+id/cardOptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.084"
+            app:layout_constraintStart_toEndOf="@+id/cardOptionIcon"
+            app:layout_constraintTop_toTopOf="@+id/cardOptionIcon"
+            app:layout_constraintVertical_bias="0.153"
+            tools:text="Tickets" />
+
+        <TextView
+            android:id="@+id/cardOptionDescription"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#05293C"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardOptionIcon"
+            app:layout_constraintEnd_toEndOf="@+id/cardOptionTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cardOptionTitle"
+            app:layout_constraintTop_toBottomOf="@+id/cardOptionTitle"
+            app:layout_constraintVertical_bias="0.0"
+            app:lineHeight="24dp"
+            tools:text="Make your booking with Flexifly and enjoy" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

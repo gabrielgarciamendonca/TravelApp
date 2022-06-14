@@ -6,4 +6,5 @@
     <string name="sign_in">Entrar</string>
     <string name="create_account">Criar Conta</string>
     <string name="skip">Pular</string>
+    <string name="option_icon">card icon</string>
 </resources>

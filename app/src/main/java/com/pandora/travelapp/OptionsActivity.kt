@@ -2,15 +2,15 @@ package com.pandora.travelapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.pandora.travelapp.databinding.ActivityMainBinding
+import com.pandora.travelapp.databinding.ActivityOptionsBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class OptionsActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityOptionsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityOptionsBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }

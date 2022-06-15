@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OptionsActivity">
+
+    <ImageView
+        android:id="@+id/optionBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_background_options"
+        android:contentDescription="@string/background_options" />
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        tools:text="Gabriel"
+        android:textColor="@color/black"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/optionBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/optionBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/titleSubName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Mendonca"
+        android:textColor="@color/black"
+        android:textSize="43sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/titleName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleName"
+        app:layout_constraintTop_toBottomOf="@+id/titleName" />
+
+    <ImageView
+        android:id="@+id/iconOptions"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/titleSubName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/titleSubName"
+        app:layout_constraintTop_toTopOf="@+id/titleName"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@drawable/photo_default"
+        android:contentDescription="@string/person_photo" />
+
+    <TextView
+        android:id="@+id/descriptionOption"
+        android:layout_width="347dp"
+        android:layout_height="44dp"
+        android:textColor="#004D40"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/optionBackground"
+        app:layout_constraintEnd_toEndOf="@+id/titleSubName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleSubName"
+        app:layout_constraintTop_toBottomOf="@+id/titleSubName"
+        app:layout_constraintVertical_bias="0.021"
+        tools:text="We focus a lot on helping the first time or inexperienced traveler head out" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionOption"
+        app:layout_constraintVertical_bias="0.067"
+        tools:itemCount="2"
+        tools:listitem="@layout/card_option" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

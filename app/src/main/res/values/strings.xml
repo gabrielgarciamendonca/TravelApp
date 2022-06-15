@@ -6,4 +6,6 @@
     <string name="create_account">Create an account</string>
     <string name="skip">Skip</string>
     <string name="option_icon">card icon</string>
+    <string name="person_photo">person_photo</string>
+    <string name="background_options">background_options</string>
 </resources>
